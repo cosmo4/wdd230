@@ -11,13 +11,13 @@ header {
 img {
     width: 200px;
     border-radius: 10px;
-    border: 20px solid #941c2f;
+    border: 20px solid #6d92dd;
 }
 .navlist {
     grid-column: 2/3;
 }
 .updateinfo {
-    background-color: #941c2f;
+    background-color: #6d92dd;
     font-size: 1.5em;
     grid-column: 2/3;
     text-align: center;
