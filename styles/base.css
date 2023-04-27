@@ -1,24 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&display=swap');
+
 body {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-header {
-    grid-column: 2/3;
-    grid-row: 1/4;
     text-align: center;
-    
-    margin: 50px;
+    font-family: "Arvo";
+}
+
+h1{
+    font-family: 'Bebas Neue';
+}
+nav {
+    display: grid;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 img {
     width: 200px;
     border-radius: 10px;
     border: 20px solid #6d92dd;
+    
 }
-.navlist {
-    grid-column: 2/3;
+
+.navlist a {
+    text-decoration: none;
+    color:black;
+    background-color: #dd786d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.navlist a:hover {
+    background-color: #dd786dbc;
+    color: #0000007d
+}
+.card li{
+    display: grid;
+    text-align: left;
+    background-color: #dd786d;
+    
+}
+li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
 }
 .updateinfo {
     background-color: #6d92dd;
-    font-size: 1.5em;
-    grid-column: 2/3;
+    font-size: 1em;
     text-align: center;
+    border-radius: 10px;
+    width: 100%;
+}
+#lastModified {
+    font-size: .8em;
 }
