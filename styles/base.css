@@ -17,37 +17,43 @@ nav {
 img {
     width: 200px;
     border-radius: 10px;
-    border: 20px solid #6d92dd;
+    border: 20px solid #588157;
     
 }
 
 .navlist a {
     text-decoration: none;
     color:black;
-    background-color: #dd786d;
+    background-color: #a3b18a;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 5px;
     border-radius: 5px;
 }
 .navlist a:hover {
-    background-color: #dd786dbc;
+    background-color: #a3b18abc;
     color: #0000007d
+}
+main h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .card li{
     display: grid;
     text-align: left;
-    background-color: #dd786d;
+    background-color: #a3b18a;
+    border-radius: 5px;
     
 }
 li a {
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 10px;
     text-decoration: none;
     color: black;
 }
 .updateinfo {
-    background-color: #6d92dd;
+    background-color: #588157;
     font-size: 1em;
     text-align: center;
     border-radius: 10px;
@@ -55,4 +61,8 @@ li a {
 }
 #lastModified {
     font-size: .8em;
+}
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
