@@ -13,13 +13,16 @@
     img {
         width: 200px;
         border-radius: 10px;
-        border: 20px solid #6d92dd;
+        border: 20px solid #588157;
+    }
+    li {
+        display: block;
     }
     .navlist {
         grid-column: 2/3;
     }
     .updateinfo {
-        background-color: #6d92dd;
+        background-color: #588157;
         font-size: 1.5em;
         grid-column: 2/3;
         text-align: center;
