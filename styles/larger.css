@@ -3,10 +3,12 @@
 @media(min-width: 650px) {
     body {
         grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     header {
-        grid-column: 2/3;
-        grid-row: 1/4;
+        grid-column: 1/3;
+        grid-row: 1/2;
         text-align: center;
         margin: 50px;
     }
@@ -19,8 +21,16 @@
         display: block;
     }
     .navlist {
-        grid-column: 2/3;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 25px;
+        /* background-color: #588157; */
+        padding: 20px;
+        
     }
+    
     .updateinfo {
         background-color: #588157;
         font-size: 1.5em;
