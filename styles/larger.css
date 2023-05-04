@@ -17,8 +17,8 @@
         border-radius: 10px;
         border: 20px solid #588157;
     }
-    li {
-        display: block;
+    .activities a {
+        background-color: #a3b18abc;
     }
     .navlist {
         margin-left: 10%;
@@ -26,9 +26,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 25px;
-        /* background-color: #588157; */
+        background-color: #588157;
         padding: 20px;
+        border-radius: 10px;
         
+    }
+    .navlist a {
+        border: 2px solid black;
+    }
+    .navlist a:hover {
+        border: none;
     }
     
     .updateinfo {
