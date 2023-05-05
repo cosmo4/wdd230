@@ -34,6 +34,10 @@ img {
     background-color: #a3b18abc;
     color: #0000007d
 }
+.activities a:hover {
+    background-color: #a3b18abc;
+    color: #F2F0E6;
+}
 main h2 {
     margin-top: 50px;
     margin-bottom: 50px;
