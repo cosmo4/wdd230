@@ -17,8 +17,9 @@
         border-radius: 10px;
         border: 20px solid #588157;
     }
-    .activities a {
+    .activities a:hover {
         background-color: #a3b18abc;
+        color: #F2F0E6;
     }
     .navlist {
         margin-left: 10%;
