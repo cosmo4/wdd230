@@ -41,9 +41,16 @@
     
     .updateinfo {
         background-color: #588157;
-        font-size: 1.5em;
+        font-size: 1em;
         grid-column: 2/3;
         text-align: center;
+        margin-bottom: 30px;
+    }
+    .updateinfo p {
+        background-color: #a3b18a;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 10px;
     }
 
 
