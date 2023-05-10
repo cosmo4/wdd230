@@ -85,25 +85,6 @@ footer {
 	content: "❌";
 }
 
-/* nav {
-    display: grid;
-    margin-top: 20px;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-.navlist a {
-        text-decoration: none;
-        color:black;
-        background-color: #a3b18a;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: 5px;
-        border-radius: 5px;
-}
-.navlist a:hover {
-        background-color: #a3b18abc;
-        color: #0000007d
-} */
 nav.open {
     display: grid;
     margin-top: 20px;
