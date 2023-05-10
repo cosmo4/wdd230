@@ -15,3 +15,8 @@ if (visitCount) {
 }
 
 document.getElementById("counterContainer").innerHTML = visitCount;
+
+function toggleNav() {
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('open');
+}
