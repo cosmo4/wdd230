@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Oleo+Script&display=swap');
 
 #imgBorders {
     background-color: #304C89;
@@ -9,4 +9,12 @@
 #background {
     background-color: #E8E5DA;
     padding: 20px;
+}
+#typography {
+    font-family: 'Bellefair', serif;
+    font-size: 30px;
+}
+#headertypo {
+    font-family: 'Oleo Script', cursive;
+    font-size: 35px;
 }
