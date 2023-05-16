@@ -1,1 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Oleo+Script&display=swap');
+
+/* Elements */
+
+body {
+    font-family: 'Bellefair';
+    background-color: #E8E5DA;
+}
+img {
+    width: 300px;
+}
+nav {
+    display: none;
+}
+
+
+
+/* id  */
+
+#hero {
+    width: 60%;
+    padding: 10px;
+    background-color: #304C89;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+#menu {
+    font-size: 1.5rem;
+    background-color: #304C89;
+}
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+nav.open {
+    display: grid;
+    gap: 10px;
+    background-color: #304C89;
+    padding: 20px;
+}
+nav.open a{
+    text-decoration: none;
+    text-align: center;
+    background-color: #9EB7E5;
+    padding: 5px;
+    color: black;
+    font-size: 1.5em;
+    
+}
+
+
