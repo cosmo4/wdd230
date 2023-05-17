@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luke Warner - WDD 230 - Web Frontend Development</title>
-    <meta property="og:title" content="Luke Warner - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="website">
-    <meta property="og:img" content="https://cosmo4.github.io/wdd230/images/templeSocialMedia.jpg">
-    <meta property="og:url" content="https://cosmo4.github.io/wdd230/index.html">
-    <link rel="icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/larger.css">
-</head>
-<body>
+    <meta
+      property="og:title"
+      content="Luke Warner - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:img"
+      content="https://cosmo4.github.io/wdd230/images/templeSocialMedia.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://cosmo4.github.io/wdd230/index.html"
+    />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+  </head>
+  <body>
     <header>
-        <h1>Luke Warner</h1>
-        <img src="./images/profilepicturecropped.jpg" alt="picture of me">
+      <div id="mode">☑️</div>
+      <h1>Luke Warner</h1>
+      <img src="./images/profilepicturecropped.jpg" alt="picture of me" />
     </header>
     <button id="menu" onclick="toggleNav()"></button>
     <nav class="navlist">
-        <a href="./index.html">Home</a>
-        <a href="./chamber/index.html">Chamber</a>
-        <a href="./week01/chambersiteplan.html" target="_blank">Site Plan</a>
-        <a href="#">Survey</a>
+      <a href="./index.html">Home</a>
+      <a href="./chamber/index.html">Chamber</a>
+      <a href="./week01/chambersiteplan.html" target="_blank">Site Plan</a>
+      <a href="#">Survey</a>
     </nav>
     <main>
-        <h2>WDD230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li class="activities">
-                    <p>Lesson One: <a href="https://codepen.io/cosmo4/pen/Rwejxde" target="_blank"> Code Pen</a> | <a href="./week01/media-query.html " target="_blank">Media Queries</a></p>
-                    <p>Lesson Two: <a href="./week02/design.html" target="_blank">Design Principles</a> | <a href="https://codepen.io/cosmo4/pen/yLRKJEP?editors=0110" target="_blank">Responsive Nav </a> | <a href="./week02/bom.html" target="_blank">DOM Manipulation</a></p>
-                    <p>Lesson Three: </p>
-                    <p>Lesson Four: </p>
-                    <p>Lesson Five: </p>
-                    <p>Lesson Six: </p>
-                </li>
-            </ul>
-        </section>
-        <section class="card">
-            <h3>Information</h3>
-            <!-- number of visits to page, weather, other ideas? -->
-            <p>Visits to Page: <span id="counterContainer"></span></p>
-        </section>
+      <h2>WDD230: Web Frontend Development</h2>
+      <section class="card">
+        <h3>Learning Activities</h3>
+        <ul>
+          <li class="activities">
+            <p>
+              Lesson One:
+              <a href="https://codepen.io/cosmo4/pen/Rwejxde" target="_blank">
+                Code Pen</a
+              >
+              |
+              <a href="./week01/media-query.html " target="_blank"
+                >Media Queries</a
+              >
+            </p>
+            <p>
+              Lesson Two:
+              <a href="./week02/design.html" target="_blank"
+                >Design Principles</a
+              >
+              |
+              <a
+                href="https://codepen.io/cosmo4/pen/yLRKJEP?editors=0110"
+                target="_blank"
+                >Responsive Nav
+              </a>
+              | <a href="./week02/bom.html" target="_blank">DOM Manipulation</a>
+            </p>
+            <p>Lesson Three:</p>
+            <p>Lesson Four:</p>
+            <p>Lesson Five:</p>
+            <p>Lesson Six:</p>
+          </li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Information</h3>
+        <!-- number of visits to page, weather, other ideas? -->
+        <p>Visits to Page: <span id="counterContainer"></span></p>
+      </section>
     </main>
     <footer class="updateinfo">
-        <p>&COPY;<span id="copyright-year"></span> | Luke Warner | Rexburg, ID</p>
-        <p id="lastModified"></p>
+      <p>&COPY;<span id="copyright-year"></span> | Luke Warner | Rexburg, ID</p>
+      <p id="lastModified"></p>
     </footer>
     <script src="./scripts/index.js"></script>
-</body>
+  </body>
 </html>
