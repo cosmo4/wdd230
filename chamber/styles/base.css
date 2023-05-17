@@ -12,11 +12,45 @@ img {
 nav {
     display: none;
 }
+h2, h3 {
+    font-family: 'Oleo Script';
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 
 
 
 /* id  */
 
+
+#spotlight, #of-the-month {
+    background-color: #9EB7E5;
+    padding: 10px;
+}
+#grow, #weather {
+    background-color: #CDC392;
+    padding: 10px;
+}
+#join {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 100px;
+    font-family: 'Bellefair';
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+#join:hover {
+    background-color: #9EB7E5;
+}
 #hero {
     width: 60%;
     padding: 10px;

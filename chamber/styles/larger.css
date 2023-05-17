@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Oleo+Script&display=swap');
 
 @media(min-width: 650px) {
-    
+
+
+    #join {
+        display: block;
+        margin: 0 auto;
+        height: 40px;
+        width: 100px;
+        font-family: 'Bellefair';
+        font-size: 20px;
+        transition: background-color 0.3s ease;
+    }
+    #join:hover {
+        background-color: #9EB7E5;
+    }
 }
