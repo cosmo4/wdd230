@@ -15,22 +15,49 @@ nav {
 h2, h3 {
     font-family: 'Oleo Script';
     text-align: center;
+    font-size: 2em;
 }
 a {
     text-decoration: none;
 }
+footer {
+    background-color: #304C89;
+    color: white;
+    width: 100%;
+    font-size: 1.3em;
+}
+footer a {
+    background-color: #E8E5DA;
+    padding: 5px;
+    border-radius: 5px;
+}
+footer div {
+    margin: 10px;
+}
+
+/* classes */
+
 .card {
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
 }
+.card p {
+    font-size: 1.3em;
+}
+
 
 
 
 
 /* id  */
 
-
+#lastModified {
+    font-size: 12px;
+}
+#copy-footer {
+    text-align: center;
+}
 #spotlight, #of-the-month {
     background-color: #9EB7E5;
     padding: 10px;
