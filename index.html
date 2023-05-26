@@ -32,7 +32,7 @@
     <header>
       <div id="mode">☑️</div>
       <h1>Luke Warner</h1>
-      <img src="./images/profilepicturecropped.jpg" alt="picture of me" >
+      <img id="profile" src="./images/profilepicturecropped.jpg" alt="picture of me" >
     </header>
     <button id="menu" onclick="toggleNav()"></button>
     <nav class="navlist">
@@ -42,6 +42,10 @@
       <a href="#">Survey</a>
     </nav>
     <main>
+      <picture id="hero">
+        <source srcset="images/accra-ghana-temple_450.webp" media="(max-width: 500px)">
+        <img src="images/accra-ghana-temple.webp" alt="Ghana Accra Temple">
+      </picture>
       <h2>WDD230: Web Frontend Development</h2>
       <section class="card">
         <h3>Learning Activities</h3>

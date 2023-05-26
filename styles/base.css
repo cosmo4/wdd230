@@ -11,7 +11,7 @@ h1{
 nav {
     display: none;
 }
-img {
+#profile {
     width: 200px;
     border-radius: 10px;
     border: 20px solid #588157;
@@ -63,6 +63,12 @@ footer {
 }
 #menu {
     font-size: 1.5rem;
+    position: sticky;
+    top: 10px;
+    text-align: left;
+    padding-right: 100%;
+    background-color: #a3b18a;
+
 }
 #menu::before {
 	content: "☰";
@@ -74,9 +80,10 @@ footer {
 
 nav.open {
     display: grid;
-    margin-top: 20px;
-    margin-right: 5%;
-    margin-left: 5%;
+    padding-top: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #588157;
 }
 nav.open a {
     text-decoration: none;

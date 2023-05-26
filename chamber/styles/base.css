@@ -31,14 +31,12 @@ footer a {
     padding: 5px;
     border-radius: 5px;
 }
-footer div {
-    margin: 10px;
-}
+
 
 /* classes */
 
 .card {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-bottom: 20px;
     justify-content: center;
@@ -90,6 +88,7 @@ footer div {
 #menu {
     font-size: 1.5rem;
     background-color: #304C89;
+    padding-right: 100%;
 }
 #menu::before {
 	content: "☰";
@@ -103,6 +102,7 @@ nav.open {
     gap: 10px;
     background-color: #304C89;
     padding: 20px;
+    width: 100%;
 }
 nav.open a{
     text-decoration: none;
