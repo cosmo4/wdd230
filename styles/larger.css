@@ -21,6 +21,12 @@
         background-color: #a3b18abc;
         color: #F2F0E6;
     }
+    .activities p {
+        padding-left: 10px;
+    }
+    .card {
+        margin: 0 auto;
+    }
     .navlist {
         margin-left: 10%;
         margin-right: 10%;
@@ -45,7 +51,28 @@
     .navlist a:hover {
         border: none;
     }
-    
+    .hero {
+        position: relative;
+        height: 400px;
+        margin-top: 20px;
+        overflow: hidden;
+        
+    }
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .herolabel {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background: radial-gradient(#D0E2FE, #8994C5);
+        opacity: 0.75;
+    }
+    .herolabel p {
+        margin: 10px;
+    }
     .updateinfo {
         background-color: #588157;
         font-size: 1em;

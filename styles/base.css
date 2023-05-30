@@ -22,6 +22,17 @@ nav {
     background-color: #a3b18abc;
     color: #F2F0E6;
 }
+.hero {
+    position: relative;
+    
+}
+.herolabel {
+    position: absolute;
+    top: 30px;
+	left: 30px;
+	background: radial-gradient(#D0E2FE, #8994C5);
+    opacity: 0.75;
+}
 main h2 {
     margin-top: 50px;
     margin-bottom: 50px;
