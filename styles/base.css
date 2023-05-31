@@ -11,6 +11,10 @@ h1{
 nav {
     display: none;
 }
+iframe {
+    height: 300px;
+    margin-bottom: 20px;
+}
 #profile {
     width: 200px;
     border-radius: 10px;
@@ -24,7 +28,7 @@ nav {
 }
 .hero {
     position: relative;
-    
+    margin-top: 20px;
 }
 .herolabel {
     position: absolute;
