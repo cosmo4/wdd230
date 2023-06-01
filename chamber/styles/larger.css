@@ -1,8 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Oleo+Script&display=swap');
 
 @media(min-width: 650px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #304C89;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+    nav a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        background-color: #9EB7E5;
+        margin: 15px;
+        padding: 5px;
+        width: 60%;
+        border-radius: 4px;
+    }
+    nav a:hover {
+        transform: scale(1.2);
+    }
+    footer div {
+        padding-left: 100px;
+    }
+    #hero {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 20px;
+    }
 
+    #month, #spot {
+    flex: 1;
+    flex-basis: 50%;
+    margin-right: 10px; /* Add margin to create the gap */
+    }
 
+    #spot {
+    margin-right: 0; /* Remove margin on the last item */
+    }
+    
+    
+    .content {
+        display:flex;
+        gap: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    #menu {
+        display: none;
+    }
+    #welcome {
+        font-size: 4rem;
+    }
     #join {
         display: block;
         margin: 0 auto;
@@ -14,5 +68,11 @@
     }
     #join:hover {
         background-color: #9EB7E5;
+    }
+    #weather {
+        padding-left: 100px;
+    }
+    #weather h3 {
+        padding-right: 100px;
     }
 }
