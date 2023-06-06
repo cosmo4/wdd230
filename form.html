@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="See the projects I have been working on in my WDD230 class."
+    />
+    <meta name="author" content="Luke Warner" />
+    <title>Luke Warner - WDD 230 - Web Frontend Development</title>
+    <meta
+      property="og:title"
+      content="Luke Warner - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://cosmo4.github.io/wdd230/images/templeSocialMedia.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://cosmo4.github.io/wdd230/index.html"
+    />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Luke Warner</h1>
+      <img
+        id="profile"
+        src="./images/profilepicturecropped.webp"
+        alt="picture of me"
+      />
+    </header>
+    <nav class="navlist">
+      <a href="./index.html">Home</a>
+      <a href="./chamber/index.html">Chamber</a>
+      <a href="./week01/chambersiteplan.html" target="_blank">Site Plan</a>
+      <a href="#">Survey</a>
+    </nav>
+    <main>
+      <form method="get">
+        <div>
+          <fieldset>
+            <legend>Contact Us</legend>
+            <div id="formmessage"></div>
+            <div>
+              <label for="userName">Username: </label>
+              <input type="text" id="userName" name="userName" required />
+            </div>
+            <div>
+              <label for="password">Password: </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="^[a-zA-Z0-9]{8,}$"
+                required
+              />
+            </div>
+            <div>
+              <label for="confirm-password">Confrim Password: </label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                pattern="^[a-zA-Z0-9]{8,}$"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email Address: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                title="Please enter a valid email"
+                required
+              />
+            </div>
+            <div>
+              <label for="pageRate">Page Rating: <div id="rangevalue">0</div></label>
+              <input
+                type="range"
+                name="pageRate"
+                id="pageRate"
+                min="0"
+                max="10"
+                value="0"
+                step="1"
+                list="rangevalues"
+              />
+              <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </datalist>
+            </div>
+          </fieldset>
+        </div>
+        <button id="btnSubmit" type="submit">Send Message</button>
+      </form>
+    </main>
+    <footer class="updateinfo">
+      <p>&COPY;<span id="copyright-year"></span> | Luke Warner | Rexburg, ID</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="./scripts/form.js"></script>
+  </body>
+</html>
