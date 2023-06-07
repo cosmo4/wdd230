@@ -46,16 +46,16 @@
       <a href="#">Survey</a>
     </nav>
     <main>
-      <form method="get">
+      <form method="get" action="./week04/record.html">
         <div>
           <fieldset>
             <legend>Contact Us</legend>
             <div id="formmessage"></div>
-            <div>
+            <div class="content">
               <label for="userName">Username: </label>
               <input type="text" id="userName" name="userName" required />
             </div>
-            <div>
+            <div class="content">
               <label for="password">Password: </label>
               <input
                 type="password"
@@ -65,8 +65,8 @@
                 required
               />
             </div>
-            <div>
-              <label for="confirm-password">Confrim Password: </label>
+            <div class="content">
+              <label for="confirm-password">Confirm Password: </label>
               <input
                 type="password"
                 id="confirm-password"
@@ -75,7 +75,7 @@
                 required
               />
             </div>
-            <div>
+            <div class="content">
               <label for="email">Email Address: </label>
               <input
                 type="email"
@@ -86,7 +86,7 @@
                 required
               />
             </div>
-            <div>
+            <div class="content">
               <label for="pageRate">Page Rating: <div id="rangevalue">0</div></label>
               <input
                 type="range"

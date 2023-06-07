@@ -17,7 +17,7 @@ function checkSame() {
 		message.style.visibility = "show";
 		p2.style.backgroundColor = "#fff0f3";
 		p2.value = "";
-		p2.focus();
+		// p2.focus();
 	} else {
 		message.style.display = "none";
 		p2.style.backgroundColor = "#fff";
