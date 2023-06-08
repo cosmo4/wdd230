@@ -1,0 +1,34 @@
+:root {
+    --border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+    --zebra: hsl(0, 0%, 93%, 1);
+    --back2: hsla(0, 0%, 0%, .75);
+}
+
+table {
+	margin: 10px auto;
+    text-align: center;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
+th {
+    padding: 10px;
+}
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+.black {
+    background-color: black;
+    color: white;
+}
+.lighter {
+    background-color: var(--back2);
+    color: white;
+}
