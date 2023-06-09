@@ -24,6 +24,10 @@ th, td {
 	padding: 7px 15px;
 	border: 1px solid var(--borderlight);
 }
+caption {
+    caption-side: bottom;
+    padding: 10px;
+}
 .black {
     background-color: black;
     color: white;
