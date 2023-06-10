@@ -80,26 +80,34 @@
     #discoverMain {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-right: 10%;
-        margin-left: 10%;
+        gap: 20px;
+        width: 70%;
+        margin: 0 auto;
     }
     .discoverContent {
         text-align: center;
+        max-width: 400px;
+        margin: 30px auto;
     }
     .discoverContent img {
         display: block;
+        width: 100%;
         margin: 0 auto;
     }
     .discoverContent h2 {
-        width: 50%;
+        width: 80%;
         margin: 0 auto;
     }
     .discoverContent p {
-        font-size: 2rem;
+        font-size: 1.3rem;
         text-align: left;
     }
     .discoverContent:hover {
         color: #304C89;
+    }
+    #timing {
+        margin: 20px 0;
+        font-size: 2rem;
     }
 
 }
