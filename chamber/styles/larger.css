@@ -11,13 +11,13 @@
         
     }
     nav a {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-decoration: none;
         color: black;
         background-color: #9EB7E5;
         margin: 15px;
         padding: 5px;
-        width: 60%;
+        width: 80%;
         border-radius: 4px;
     }
     nav a:hover {
@@ -96,6 +96,7 @@
     }
     .discoverContent p {
         font-size: 2rem;
+        text-align: left;
     }
     .discoverContent:hover {
         color: #304C89;

@@ -27,6 +27,7 @@ footer {
     color: white;
     width: 100%;
     font-size: 1.3em;
+    margin-bottom: 20px;
 }
 footer a {
     background-color: #E8E5DA;
@@ -48,6 +49,28 @@ footer a {
 }
 .card img {
     width: 100%;
+    margin: 0 auto;
+}
+.discoverContent {
+    background-color: #CDC392;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.discoverContent div {
+    background-color: #E8E5DA;
+    padding: 5px 10px 10px 10px;
+    margin-top: 10px;
+}
+.discoverContent h2 {
+    margin: 0;
+}
+/* .discoverContent p {
+    font-size: 1.2rem;
+} */
+
+.discoverContent img {
+    display: block;
     margin: 0 auto;
 }
 
@@ -125,24 +148,10 @@ nav.open a{
     margin-top: 40px;
     width: 100%;
 }
-.discoverContent {
-    background-color: #CDC392;
-    margin: 30px;
-    padding: 20px;
-    border-radius: 10px;
-}
-.discoverContent div {
-    background-color: #E8E5DA;
-    padding: 5px 10px 10px 10px;
-    margin-top: 10px;
-}
-.discoverContent h2 {
-    margin: 0;
+#timing {
+    text-align: center;
+    font-size: 16px;
 }
 
-.discoverContent img {
-    display: block;
-    margin: 0 auto;
-}
 
 
