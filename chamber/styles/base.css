@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Oleo+Script&display=swap');
 
 /* Elements */
-
+html {
+    max-width: 100%;
+    overflow: hidden;
+}
 body {
     font-family: 'Bellefair';
     background-color: #E8E5DA;
@@ -88,7 +91,9 @@ footer a {
 #menu {
     font-size: 1.5rem;
     background-color: #304C89;
-    padding-right: 100%;
+    width: 100%;
+    text-align: left;
+    
 }
 #menu::before {
 	content: "☰";
@@ -101,17 +106,45 @@ nav.open {
     display: grid;
     gap: 10px;
     background-color: #304C89;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
 }
 nav.open a{
     text-decoration: none;
     text-align: center;
     background-color: #9EB7E5;
-    padding: 5px;
+    padding: 5px 0;
+    width: 90%;
+    margin: 0 auto;
     color: black;
     font-size: 1.5em;
     
+}
+
+#discoverMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+    width: 100%;
+}
+.discoverContent {
+    background-color: #CDC392;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.discoverContent div {
+    background-color: #E8E5DA;
+    padding: 5px 10px 10px 10px;
+    margin-top: 10px;
+}
+.discoverContent h2 {
+    margin: 0;
+}
+
+.discoverContent img {
+    display: block;
+    margin: 0 auto;
 }
 
 
