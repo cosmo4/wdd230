@@ -28,6 +28,7 @@
     }
     #hero {
         width: 40%;
+        padding: 10px;
         margin-left: 30%;
         margin-right: 30%;
         margin-bottom: 20px;
@@ -94,7 +95,7 @@
         margin: 0 auto;
     }
     .discoverContent p {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .discoverContent:hover {
         color: #304C89;

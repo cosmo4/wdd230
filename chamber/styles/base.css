@@ -3,7 +3,6 @@
 /* Elements */
 html {
     max-width: 100%;
-    overflow: hidden;
 }
 body {
     font-family: 'Bellefair';
@@ -81,11 +80,10 @@ footer a {
     background-color: #9EB7E5;
 }
 #hero {
-    width: 60%;
-    padding: 10px;
+    width: 90%;
+    padding: 2%;
     background-color: #304C89;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 3%;
 
 }
 #menu {
