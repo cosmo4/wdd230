@@ -153,6 +153,106 @@ nav.open a{
     margin: 20px 0 0 0;
     font-size: 1.5rem;
 }
+#thankyou {
+    text-align: center;
+    width: 80%;
+    margin: 50px auto 100px;
+    background-color: #9EB7E5;
+    color: black;
+    border-radius: 10px;
+}
+#thankyou h1 {
+    padding: 10px;
+}
+#thankyou p {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+
+}
+table {
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: 30px auto 0;
+    font-size: 1.2rem;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #9EB7E5;
+    color: black;
+}
+.data {
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 30px auto 0;
+    font-size: 1.5rem;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 8px 16px;
+}
+.membership-level-options {
+    margin-top: 10px;
+}
+
+.membership-level-options label {
+    display: block;
+    margin-bottom: 8px;
+}
+#description {
+    margin-top: 10px;
+}
+form label input:required {
+    border-left: red solid 4px;
+}
+form label input:required:valid {
+    border-left: green solid 4px;
+}
+#submit {
+    margin: 0 auto;
+}
+.radioInputs {
+    margin: 20px 0 0;
+    font-size: 1.5rem;
+}
+#gold {
+    margin-bottom: 20px;
+}
 
 
 

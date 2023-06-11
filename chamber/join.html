@@ -58,25 +58,25 @@
             <label>
                 Membership Level:
             </label>
-            <div>
+            <div class="radioInputs">
                 <label>
                     <input type="radio" name="membership-level" value="np-membership">
                     NP Membership (Non-Profit)
                 </label>
             </div>
-            <div>
+            <div class="radioInputs">
                 <label>
                     <input type="radio" name="membership-level" value="bronze-membership">
                     Bronze Membership
                 </label>
             </div>
-            <div>
+            <div class="radioInputs">
                 <label>
                     <input type="radio" name="membership-level" value="silver-membership">
                     Silver Membership
                 </label>
             </div>
-            <div>
+            <div class="radioInputs" id="gold">
                 <label>
                     <input type="radio" name="membership-level" value="gold-membership">
                     Gold Membership
@@ -93,6 +93,7 @@
           
             <input type="submit" id="submit" value="JOIN">
           </form>
+          <div class="table-container">
           <table class="membership-benefits">
             <caption>Membership Comparison</caption>
             <thead>
@@ -139,7 +140,8 @@
                     <td class="data">✔️</td>
                 </tr>
             </tbody>
-        </table>          
+        </table>
+      </div>       
     </main>
     <footer>
       <div>

@@ -188,6 +188,7 @@
         margin: 50px auto 300px;
         background-color: #9EB7E5;
         color: black;
+        border-radius: 10px;
     }
     #thankyou h1 {
         padding: 10px;
