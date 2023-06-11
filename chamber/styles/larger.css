@@ -24,7 +24,8 @@
         transform: scale(1.2);
     }
     footer div {
-        padding-left: 100px;
+        width: 80%;
+        margin: 0 auto;
     }
     #hero {
         width: 40%;
@@ -109,5 +110,78 @@
         margin: 20px 0;
         font-size: 2rem;
     }
+
+    table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: 30px auto 0;
+    }
+    
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+    th {
+        background-color: #9EB7E5;
+        color: black;
+    }
+    .data {
+        text-align: center;
+    }
+    
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+    
+    input[type="submit"] {
+        width: auto;
+        padding: 8px 16px;
+    }
+    .membership-level-options {
+        margin-top: 10px;
+    }
+
+    .membership-level-options label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    #description {
+        margin-top: 10px;
+    }
+    form label input:required {
+        border-left: red solid 4px;
+    }
+    form label input:required:valid {
+        border-left: green solid 4px;
+    }
+    #submit {
+        margin: 0 auto;
+    }
+    
 
 }

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Chamber of Commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+  </head>
+  <body id="joinBody">
+    <header>
+      <img id="hero" src="./images/this-star.jpg" alt="Welcome to star sign" />
+      <button id="menu" onclick="toggleNav()"></button>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./discover.html">Discover</a>
+        <a href="#">Join</a>
+        <a href="#">Events</a>
+      </nav>
+    </header>
+    <main id="joinMain">
+        <form method="get" action="thankyou.html">
+            <label>
+              First Name:
+              <input type="text" name="first-name" required>
+            </label>
+          
+            <label>
+              Last Name:
+              <input type="text" name="last-name" required>
+            </label>
+          
+            <label>
+              Title/Position:
+              <input type="text" name="position" pattern="[A-Za-z\s-]{7,}" title="Please enter at least 7 characters containing only letters, spaces, and hyphens." required>
+            </label>
+          
+            <label>
+              Email Address:
+              <input type="email" name="email" placeholder="example@example.com" required>
+            </label>
+          
+            <label>
+              Mobile Phone Number:
+              <input type="tel" name="phone" required>
+            </label>
+          
+            <label>
+              Business/Organization Name:
+              <input type="text" name="organization" required>
+            </label>
+          
+            <label>
+                Membership Level:
+            </label>
+            <div>
+                <label>
+                    <input type="radio" name="membership-level" value="np-membership">
+                    NP Membership (Non-Profit)
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="membership-level" value="bronze-membership">
+                    Bronze Membership
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="membership-level" value="silver-membership">
+                    Silver Membership
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="membership-level" value="gold-membership">
+                    Gold Membership
+                </label>
+            </div>
+            
+          
+            <label id="description">
+              Business/Organization Description:
+              <textarea name="description"></textarea>
+            </label>
+          
+            <input type="hidden" name="timestamp" value="">
+          
+            <input type="submit" id="submit" value="JOIN">
+          </form>
+          <table class="membership-benefits">
+            <caption>Membership Comparison</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Membership Level</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Special Events</th>
+                    <th scope="col">Training Sessions</th>
+                    <th scope="col">Advertising Opportunities</th>
+                    <th scope="col">Event Discounts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NP Membership (Non-Profit)</td>
+                    <td>Free</td>
+                    <td class="data">✔️</td>
+                    <td class="data">✔️</td>
+                    <td class="data">✔️</td>
+                    <td class="data">N/A</td>
+                </tr>
+                <tr>
+                    <td>Bronze Membership</td>
+                    <td>$50/month</td>
+                    <td class="data">✔️</td>
+                    <td class="data">❌</td>
+                    <td class="data">❌</td>
+                    <td class="data">❌</td>
+                </tr>
+                <tr>
+                    <td>Silver Membership</td>
+                    <td>$100/month</td>
+                    <td class="data">✔️</td>
+                    <td class="data">✔️</td>
+                    <td class="data">❌</td>
+                    <td class="data">❌</td>
+                </tr>
+                <tr>
+                    <td>Gold Membership</td>
+                    <td>$200/month</td>
+                    <td class="data">✔️</td>
+                    <td class="data">✔️</td>
+                    <td class="data">✔️</td>
+                    <td class="data">✔️</td>
+                </tr>
+            </tbody>
+        </table>          
+    </main>
+    <footer>
+      <div>
+        <h3>Contact Us</h3>
+        <p>Office address: 498 W Main St Star, Idaho</p>
+        <a href="#">Email us</a>
+        <p>Phone: (208)-898-4132</p>
+        <p>Want to be featured on our page? <a href="#">Click Here!</a></p>
+        <p id="copy-footer">
+          &COPY;<span id="copyright-year"></span> | Luke Warner | WDD230 Chamber
+          Project
+        </p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+    <script src="./scripts/chamber.js"></script>
+  </body>
+</html>

@@ -33,3 +33,5 @@ if (!lastVisitDate) {
   document.getElementById('timing').innerText = message;
   localStorage.setItem('lastVisitDate', currentDate.toISOString());
 }
+document.querySelector('input[type="hidden"]').value = new Date().toISOString();
+
