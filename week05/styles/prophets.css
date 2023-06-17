@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+
+:root {
+    --smallFont: 'Roboto', sans-serif;
+    --bigFont: 'Roboto Slab', serif;
+}
 
 #cards {
     display: grid;
     gap: 10px;
+    text-align: center;
+    font-family: var(--bigFont);
     
+}
+h1 {
+    font-family: var(--bigFont);
+    text-align: center;
+}
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 section {
     background-color: #b9b9cc;
+    padding: 10px;
+    margin: 10px;
     
+}
+footer {
+    text-align: center;
 }
 
 @media screen and (min-width:650px){
