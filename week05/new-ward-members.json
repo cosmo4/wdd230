@@ -1,0 +1,24 @@
+{
+    "familyName": "Johnson",
+    "moveInDate": "12-25-2022",
+    "numOfPeople": 3,
+    "visitedByBishopric": true,
+    "individuals": [ 
+        {
+        "name": "Janet",
+        "gender": "Female",
+        "birthdate": "02-16-1984"
+    },
+    {
+        "name": "Daniel",
+        "gender": "Male",
+        "birthdate": "03-19-1982"
+    },
+    {
+        "name": "Jerry",
+        "gender": "Male",
+        "birthdate": "01-03-2010"
+    }
+    ]
+
+}
