@@ -31,7 +31,8 @@
         padding-left: 10px;
     }
     .card {
-        margin: 0 auto;
+        margin: 0 auto 20px;
+        
     }
     .navlist {
         margin-left: 10%;
@@ -95,6 +96,13 @@
 
     #menu {
         display: none;
+    }
+    #weatherInfo {
+        background: radial-gradient(#a3b18a, #588157);
+        opacity: 0.75;
+        width: 40%;
+        padding: 10px 0;
+        border-radius: 5px;
     }
 
 }

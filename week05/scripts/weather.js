@@ -26,11 +26,12 @@ function displayResults(data) {
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   const weatherEvents = data.weather.map(event => {
     const description = event.description.toLocaleUpperCase('en-US', { sentence: 'words' });
-    return `<p>${description}</p>`;
+    return `${description}`;
   }).join('');
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', 'Weather Events');
   captionDesc.textContent = weatherEvents;
+  console.log(weatherEvents);
 }
 
 apiFetch();
