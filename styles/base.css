@@ -11,6 +11,10 @@ h1{
 nav {
     display: none;
 }
+ul {
+    padding: 0;
+    margin: 0 auto 30px;
+}
 iframe {
     height: 300px;
     margin-bottom: 20px;
@@ -20,6 +24,11 @@ iframe {
     border-radius: 10px;
     border: 20px solid #588157;
     
+}
+#weather-icon {
+    background-color: #F2F0E6;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 .activities a:hover {
@@ -55,6 +64,13 @@ li a {
     text-decoration: none;
     color: black;
 }
+.weeks p {
+    text-align: left;
+    padding: 10px
+}
+.weeks a {
+    padding: 10px;
+}
 .updateinfo {
     background-color: #588157;
     font-size: 1em;
@@ -79,9 +95,10 @@ footer {
 #menu {
     font-size: 1.5rem;
     position: sticky;
+    z-index: 9999;
     top: 10px;
     text-align: left;
-    padding-right: 100%;
+    width: 100%;
     background-color: #a3b18a;
 
 }
@@ -95,25 +112,36 @@ footer {
 
 nav.open {
     display: grid;
-    padding-top: 20px;
-    padding-right: 5%;
-    padding-left: 5%;
+    width: 100%;
     background-color: #588157;
+    position: sticky;
+    z-index: 9999;
+    top: 40px;
+    
 }
 nav.open a {
     text-decoration: none;
-        color:black;
-        background-color: #a3b18a;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: 5px;
-        border-radius: 5px;
+    text-align: center;
+    color:black;
+    background-color: #a3b18a;
+    width: 80%;
+    padding: 15px 0;
+    margin: 7px auto;
+    border-radius: 5px;
 }
 nav.open a:hover {
     background-color: #a3b18abc;
     color: #0000007d
 }
 
+#weatherInfo {
+    background: radial-gradient(#a3b18a, #588157);
+    opacity: 0.75;
+    width: 70%;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+}
 #mode {
 	position: absolute;
 	top: 1rem;

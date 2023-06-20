@@ -27,9 +27,19 @@
         background-color: #a3b18abc;
         color: #F2F0E6;
     }
-    .activities p {
-        padding-left: 10px;
+    .activities {
+        display: grid;
+        grid-template-columns: 1fr;
     }
+    .weeks p {
+        text-align: left;
+        padding: 10px
+    }
+    .weeks a {
+        padding: 10px;
+    }
+    
+    
     .card {
         margin: 0 auto 20px;
         
@@ -104,5 +114,7 @@
         padding: 10px 0;
         border-radius: 5px;
     }
-
+    #learningActivities {
+        padding: 20px;
+    }
 }
