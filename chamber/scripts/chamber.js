@@ -4,6 +4,8 @@ document.getElementById("copyright-year").innerText = newDate.getFullYear();
 const modifyDate = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = "Last Modified: " + modifyDate;
 
+const membersJSON = 'https://cosmo4.github.io/wdd230/chamber/data/members.json';
+
 function toggleNav() {
     var nav = document.querySelector('nav');
     nav.classList.toggle('open');
@@ -35,3 +37,26 @@ if (!lastVisitDate) {
 }
 document.querySelector('input[type="hidden"]').value = new Date().toISOString();
 
+function toggleDirectory() {
+
+}
+
+function displayResults(data) {
+
+}
+
+async function jsonFetch() {
+  
+  try {
+    const jsonFile = await fetch(membersJSON);
+    if (jsonFile.ok) {
+      const data = await jsonFile.json();
+      displayResults(data);
+      console.log(data);
+    } else {
+      throw new Error('Error: Unable to fetch JSON file');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}

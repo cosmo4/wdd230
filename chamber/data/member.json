@@ -1,0 +1,83 @@
+[
+    {
+        "companyName": "Johnson's Bakery",
+        "address": "173 Main Street",
+        "phoneNumber": "208-555-1234",
+        "url": "http://www.johnsonsbakery.com",
+        "image": "",
+        "membershipLevel": "Gold",
+        "ownerNames": "Jimmy Johnson"
+    },
+    {
+        "companyName": "Smith's Hardware",
+        "address": "456 Elm Street",
+        "phoneNumber": "208-555-5678",
+        "url": "http://www.smithshardware.com",
+        "image": "",
+        "membershipLevel": "Silver",
+        "ownerNames": "Jane Smith"
+    },
+    {
+        "companyName": "Aroma Coffee House",
+        "address": "789 Oak Avenue",
+        "phoneNumber": "208-555-9012",
+        "url": "http://www.aromacoffeehouse.com",
+        "image": "",
+        "membershipLevel": "Bronze",
+        "ownerNames": "David Johnson"
+    },
+    {
+        "companyName": "Bookworm Books",
+        "address": "321 Pine Road",
+        "phoneNumber": "208-555-3456",
+        "url": "http://www.bookwormbooks.com",
+        "image": "",
+        "membershipLevel": "NP",
+        "ownerNames": "Emily Wilson"
+    },
+    {
+        "companyName": "FitNation Gym",
+        "address": "987 Cedar Lane",
+        "phoneNumber": "208-555-7890",
+        "url": "http://www.fitnationgym.com",
+        "image": "",
+        "membershipLevel": "Gold",
+        "ownerNames": "Michael Brown"
+    },
+    {
+        "companyName": "StyleStudio Salon",
+        "address": "654 Walnut Avenue",
+        "phoneNumber": "208-555-2345",
+        "url": "http://www.stylestudiosalon.com",
+        "image": "",
+        "membershipLevel": "Silver",
+        "ownerNames": "Sophia Davis"
+    },
+    {
+        "companyName": "AutoCare Solutions",
+        "address": "890 Maple Street",
+        "phoneNumber": "208-555-6789",
+        "url": "http://www.autocaresolutions.com",
+        "image": "",
+        "membershipLevel": "Bronze",
+        "ownerNames": "Daniel Wilson"
+    },
+    {
+        "companyName": "Pet Paradise",
+        "address": "567 Oakwood Drive",
+        "phoneNumber": "208-555-0123",
+        "url": "http://www.petparadise.com",
+        "image": "",
+        "membershipLevel": "NP",
+        "ownerNames": "Olivia Taylor"
+    },
+    {
+        "companyName": "Dave & Sue's Diner",
+        "address": "326 W Main St",
+        "phoneNumber": "208-898-2323",
+        "url": "http://www.davensuesdiner.com",
+        "image": "",
+        "membershipLevel": "Bronze",
+        "ownerNames": "Dave Thayne, Sue Thayne"
+    }
+]
