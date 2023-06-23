@@ -25,8 +25,10 @@ function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   const weatherEvents = data.weather.map(event => {
-    const description = event.description.toLocaleUpperCase('en-US', { sentence: 'words' });
-    return `${description}`;
+    const words = event.description.toLowerCase().split(' ');
+    const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+    const description = capitalizedWords.join(' ');
+    return description;
   }).join('');
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', 'Weather Events');
