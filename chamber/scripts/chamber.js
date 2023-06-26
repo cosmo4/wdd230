@@ -4,7 +4,7 @@ document.getElementById("copyright-year").innerText = newDate.getFullYear();
 const modifyDate = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = "Last Modified: " + modifyDate;
 
-const membersJSON = 'https://cosmo4.github.io/wdd230/chamber/data/members.json';
+
 
 function toggleNav() {
     var nav = document.querySelector('nav');
@@ -36,6 +36,8 @@ if (!lastVisitDate) {
   localStorage.setItem('lastVisitDate', currentDate.toISOString());
 }
 document.querySelector('input[type="hidden"]').value = new Date().toISOString();
+
+const membersJSON = 'https://cosmo4.github.io/wdd230/chamber/data/members.json';
 
 function toggleDirectory() {
 
