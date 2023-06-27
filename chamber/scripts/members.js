@@ -4,25 +4,53 @@ document.getElementById("copyright-year").innerText = newDate.getFullYear();
 const modifyDate = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = "Last Modified: " + modifyDate;
 
-
+window.addEventListener('DOMContentLoaded', function() {
+  const button = document.getElementById('cardView');
+  button.click();
+});
 
 function toggleNav() {
-    var nav = document.querySelector('nav');
+    let nav = document.querySelector('nav');
     nav.classList.toggle('open');
 
-    var menu = document.getElementById('menu');
+    let menu = document.getElementById('menu');
     menu.classList.toggle('open');
 }
 
 
-const membersJSON = 'https://cosmo4.github.io/wdd230/chamber/data/members.json';
+const membersJSON = 'https://cosmo4.github.io/wdd230/chamber/data/member.json';
 
-function toggleDirectory() {
+function toggleDirectoryList() {
+  // add class to section memberInfo for easy styling
+  const memInfo = document.getElementById('memberInfo');
+  memInfo.classList.toggle('listViewMemberInfo');
+
+  // add class to members for easy styling
+  const comp = document.querySelector('.members');
+  comp.classList.toggle('listViewMember');
+
+  // add class to button for easy styling 
+  const button = document.getElementById('listView');
+  button.classList.toggle('selectedBtn');
+}
+
+function toggleDirectoryCard() {
+  // add class to section memberInfo for easy styling
+  const memInfo = document.getElementById('memberInfo');
+  memInfo.classList.toggle('cardViewMemberInfo');
+
+  // add class to members for easy styling
+  const comp = document.querySelector('.members');
+  comp.classList.toggle('cardViewMember');
+
+  // add class to button for easy styling 
+  const button = document.getElementById('cardView');
+  button.classList.toggle('selectedBtn');
 
 }
 
 function displayResults(data) {
-    const membersList = document.getElementById('membersInfo');
+    const membersList = document.getElementById('memberInfo');
     data.forEach((member) => {
         // put each member into a section with id of company name and
         // class name of members
@@ -31,18 +59,46 @@ function displayResults(data) {
         company.classList.add('members');
 
         // create element for companyName
+        const companyName = document.createElement('p');
+        companyName.textContent = member.companyName;
+        company.appendChild(companyName);
 
         //create element for address
+        const address = document.createElement('p');
+        address.textContent = member.address;
+        company.appendChild(address);
 
         // create element for phoneNumber
+        const phone = document.createElement('p');
+        phone.textContent = member.phoneNumber;
+        company.appendChild(phone);
 
-        //create elemeent for url
+        // create element for url
+        const url = document.createElement('a');
+        url.textContent = member.url;
+        url.href = member.url;
+        url.setAttribute('target', '_blank');
+        company.appendChild(url);
 
         // create element for image
+        const compImg = document.createElement('img');
+        compImg.src = member.image;
+        compImg.alt = member.companyName;
+        company.appendChild(compImg);
 
         // create element for membershipLevel
+        const memLevel = document.createElement('p');
+        memLevel.textContent = member.membershipLevel;
+        company.appendChild(memLevel);
 
         // create element for owner names
+        const ownerNames = document.createElement('p');
+        ownerNames.textContent = member.ownerNames;
+        company.appendChild(ownerNames);
+
+        // append section to membersList on html doc
+        membersList.appendChild(company);
+    
 
 
     })
@@ -64,3 +120,5 @@ async function jsonFetch() {
     console.log(error);
   }
 }
+
+jsonFetch();
