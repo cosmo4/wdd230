@@ -5,8 +5,12 @@ const modifyDate = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = "Last Modified: " + modifyDate;
 
 window.addEventListener('DOMContentLoaded', function() {
-  const button = document.getElementById('cardView');
-  button.click();
+  setTimeout(function() {
+    // Code to be executed after 1 seconds
+    const button = document.getElementById('cardView');
+    button.click();
+  }, 500);
+  console.log('Page done loading finally')
 });
 
 function toggleNav() {
@@ -32,6 +36,16 @@ function toggleDirectoryList() {
   // add class to button for easy styling 
   const button = document.getElementById('listView');
   button.classList.toggle('selectedBtn');
+
+  // remove class from cardView button to unselect it
+  const cardViewButton = document.getElementById('cardView');
+  cardViewButton.classList.remove('selectedBtn');
+
+  // remove class from section memberInfo to clear previous view
+  memInfo.classList.remove('cardViewMemberInfo');
+
+  // remove class from members to clear previous view
+  comp.classList.remove('cardViewMember');
 }
 
 function toggleDirectoryCard() {
@@ -47,7 +61,17 @@ function toggleDirectoryCard() {
   const button = document.getElementById('cardView');
   button.classList.toggle('selectedBtn');
 
+  // remove class from listView button to unselect it
+  const listViewButton = document.getElementById('listView');
+  listViewButton.classList.remove('selectedBtn');
+
+  // remove class from section memberInfo to clear previous view
+  memInfo.classList.remove('listViewMemberInfo');
+
+  // remove class from members to clear previous view
+  comp.classList.remove('listViewMember');
 }
+
 
 function displayResults(data) {
     const membersList = document.getElementById('memberInfo');

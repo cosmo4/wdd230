@@ -65,16 +65,41 @@ footer a {
 .discoverContent h2 {
     margin: 0;
 }
-/* .discoverContent p {
-    font-size: 1.2rem;
-} */
 
 .discoverContent img {
     display: block;
     margin: 0 auto;
 }
 
+.members {
+
+}
+
+button.selectedBtn {
+    background-color: #304C89;
+    color:#E8E5DA;
+}
+
+.listViewMemberInfo {
+
+}
+
+.listViewMember {
+
+}
+
+.cardViewMemberInfo {
+
+}
+.cardViewMember {
+
+}
+
 /* id  */
+#directoryMain {
+    margin: 0 auto;
+    text-align: center;
+}
 
 #lastModified {
     font-size: 12px;
@@ -130,7 +155,7 @@ nav.open {
     padding: 20px 0;
     width: 100%;
 }
-nav.open a{
+nav.open a {
     text-decoration: none;
     text-align: center;
     background-color: #9EB7E5;
