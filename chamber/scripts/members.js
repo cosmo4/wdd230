@@ -6,11 +6,12 @@ document.getElementById("lastModified").innerHTML = "Last Modified: " + modifyDa
 
 window.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
-    // Code to be executed after 1 seconds
+    // Ensure that cardview is default by clicking the button
+    // after one second of loading
     const button = document.getElementById('cardView');
     button.click();
   }, 500);
-  console.log('Page done loading finally')
+  
 });
 
 function toggleNav() {
