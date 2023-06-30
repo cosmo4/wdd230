@@ -234,7 +234,9 @@
       .listViewMember:nth-child(odd) a:hover{
         color: black;
       }
-      
+    #direct-h1 {
+        font-size: 3rem;
+    }
     
 
 }
