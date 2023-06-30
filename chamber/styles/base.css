@@ -99,14 +99,17 @@ button.selectedBtn {
 }
 
 .listViewMemberInfo {
-    
+    display: block;
+    margin: 0;
 }
 .listViewMemberInfo img {
     display: none;
 }
 
 .listViewMember {
-
+    display: block;
+    text-align: left;
+    padding: 10px 0 10px 10px
 }
 
 .cardViewMemberInfo  img {

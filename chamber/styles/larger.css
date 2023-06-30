@@ -197,6 +197,44 @@
         font-size: 2rem;
         padding: 10px;
     }
+
+    /* directory css */
+
+    .cardViewMemberInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .members {
+        border-radius: 8px;
+    }
+
+    .listViewMember {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr 1.5fr 1.5fr;
+        font-size: 1.2rem;
+        text-align: left;
+        
+        margin: 10px 0;
+    }
+    .listViewMember p {
+        margin: 0 0;
+    }
+    .listViewMember:nth-child(even) {
+        background-color: #9EB7E5; 
+      }
+      
+      .listViewMember:nth-child(odd) {
+        background-color: #304C89;
+        color: white;
+      }
+      .listViewMember:nth-child(odd) a{
+        color: white;
+      }
+      .listViewMember:nth-child(odd) a:hover{
+        color: black;
+      }
+      
     
 
 }

@@ -31,8 +31,10 @@ function toggleDirectoryList() {
   memInfo.classList.toggle('listViewMemberInfo');
 
   // add class to members for easy styling
-  const comp = document.querySelector('.members');
-  comp.classList.toggle('listViewMember');
+  const compList = document.querySelectorAll('.members');
+  compList.forEach((element) => {
+    element.classList.toggle('listViewMember');
+});
 
   // add class to button for easy styling 
   const button = document.getElementById('listView');
@@ -46,7 +48,11 @@ function toggleDirectoryList() {
   memInfo.classList.remove('cardViewMemberInfo');
 
   // remove class from members to clear previous view
-  comp.classList.remove('cardViewMember');
+  const compList2 = document.querySelectorAll('.members');
+  compList2.forEach((element) => {
+  element.classList.remove('cardViewMember');
+});
+
 }
 
 function toggleDirectoryCard() {
@@ -55,8 +61,10 @@ function toggleDirectoryCard() {
   memInfo.classList.toggle('cardViewMemberInfo');
 
   // add class to members for easy styling
-  const comp = document.querySelector('.members');
-  comp.classList.toggle('cardViewMember');
+  const compList1 = document.querySelectorAll('.members');
+  compList1.forEach((element) => {
+    element.classList.toggle('cardViewMember');
+});
 
   // add class to button for easy styling 
   const button = document.getElementById('cardView');
@@ -70,7 +78,11 @@ function toggleDirectoryCard() {
   memInfo.classList.remove('listViewMemberInfo');
 
   // remove class from members to clear previous view
-  comp.classList.remove('listViewMember');
+  const compList = document.querySelectorAll('.members');
+  compList.forEach((element) => {
+    element.classList.remove('listViewMember');
+});
+
 }
 
 
