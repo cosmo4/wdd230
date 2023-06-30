@@ -76,7 +76,7 @@
         "address": "326 W Main St",
         "phoneNumber": "208-898-2323",
         "url": "http://www.davensuesdiner.com",
-        "image": "",
+        "image": "https://cosmo4.github.io/wdd230/chamber/images/diner-image.jpg",
         "membershipLevel": "Bronze",
         "ownerNames": "Dave Thayne, Sue Thayne"
     }
