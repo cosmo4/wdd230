@@ -75,7 +75,18 @@ footer a {
     font-size: 1.5rem;
     margin: 20px 0;
     background-color: #9EB7E5;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+.members a:hover {
+    color: #E8E5DA;
+
+}
+.members p {
+    margin: 5px 0;
+}
+
+.compName {
+    font-weight: bold;
 }
 button {
     margin-top: 20px;
@@ -98,7 +109,13 @@ button.selectedBtn {
 
 }
 
-.cardViewMemberInfo {
+.cardViewMemberInfo  img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #304C89;
+    padding: 10px;
 
 }
 .cardViewMember {

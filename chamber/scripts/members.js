@@ -83,9 +83,16 @@ function displayResults(data) {
         company.id = member.companyName.replace(/\s/g, '-').toLowerCase();
         company.classList.add('members');
 
+        // create element for image
+        const compImg = document.createElement('img');
+        compImg.src = member.image;
+        compImg.alt = member.companyName;
+        company.appendChild(compImg);
+
         // create element for companyName
         const companyName = document.createElement('p');
         companyName.textContent = member.companyName;
+        companyName.classList.add('compName');
         company.appendChild(companyName);
 
         //create element for address
@@ -105,20 +112,14 @@ function displayResults(data) {
         url.setAttribute('target', '_blank');
         company.appendChild(url);
 
-        // create element for image
-        const compImg = document.createElement('img');
-        compImg.src = member.image;
-        compImg.alt = member.companyName;
-        company.appendChild(compImg);
-
         // create element for membershipLevel
         const memLevel = document.createElement('p');
-        memLevel.textContent = member.membershipLevel;
+        memLevel.textContent = "Membership Level: " + member.membershipLevel;
         company.appendChild(memLevel);
 
         // create element for owner names
         const ownerNames = document.createElement('p');
-        ownerNames.textContent = member.ownerNames;
+        ownerNames.textContent = "Owner(s): " + member.ownerNames;
         company.appendChild(ownerNames);
 
         // append section to membersList on html doc
