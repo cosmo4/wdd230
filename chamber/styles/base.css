@@ -121,11 +121,31 @@ button.selectedBtn {
     padding: 10px;
 
 }
-.cardViewMember {
-
-}
 
 /* id  */
+
+#weather-icon {
+    background-color: #f2f0e699;
+    padding: 0;
+    border-radius: 5px;
+    width: 50px;
+}
+#weather {
+    width: 100%;
+}
+#weatherGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+#forecast {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 #directoryMain {
     margin: 0 auto;
     text-align: center;
@@ -139,11 +159,20 @@ button.selectedBtn {
 }
 #spotlight, #of-the-month {
     background-color: #9EB7E5;
-    padding: 10px;
+    padding: 10px 0;
+}
+#spotlight img, #of-the-month img{
+    width: 100%;
 }
 #grow, #weather {
     background-color: #CDC392;
-    padding: 10px;
+    padding: 10px 0;
+}
+
+#grow > *, #spotlight > *, #weather > *, #of-the-month > * {
+    width: calc(100% - 20px);
+    margin: 0 auto; 
+    padding: 10px 0;
 }
 #join {
     display: block;

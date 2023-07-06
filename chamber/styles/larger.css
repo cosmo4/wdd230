@@ -38,13 +38,19 @@
     #month, #spot {
     flex: 1;
     flex-basis: 50%;
-    margin-right: 10px; /* Add margin to create the gap */
+    margin-right: 10px; 
     }
 
     #spot {
-    margin-right: 0; /* Remove margin on the last item */
+    margin-right: 0; 
     }
-    
+    #spotlight, #of-the-month {
+        background-color: #9EB7E5;
+        padding: 10px;
+    }
+    #weather {
+        
+    }
     
     .content {
         display:flex;
@@ -71,13 +77,6 @@
     #join:hover {
         background-color: #9EB7E5;
     }
-    #weather {
-        padding-left: 100px;
-    }
-    #weather h3 {
-        padding-right: 100px;
-    }
-
     #discoverMain {
         display: grid;
         grid-template-columns: 1fr 1fr;
