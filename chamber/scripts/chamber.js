@@ -83,23 +83,32 @@ async function apiFetch() {
   }
 }
 
-
-
 function displayResults(data) {
-currentTemp.innerHTML = `Temperature: ${data.main.temp.toFixed(0)}&deg;F`;
-const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-const weatherEvents = data.weather.map(event => {
-const description = event.description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-return description;
-}).join('');
+  const forecastSection = document.getElementById('forecast');
+  const todayWeather = document.createElement('section');
 
-weatherIcon.setAttribute('src', iconsrc);
-weatherIcon.setAttribute('alt', 'Weather Events');
-captionDesc.textContent = `Skies: ${weatherEvents}`;
-console.log(weatherEvents);
+  const temperatureElement = document.createElement('p');
+  temperatureElement.textContent = `Temperature: ${data.main.temp.toFixed(0)}°F`;
+  todayWeather.appendChild(temperatureElement);
+
+  const iconElement = document.createElement('img');
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  iconElement.setAttribute('src', iconsrc);
+  iconElement.setAttribute('alt', 'Weather Icon');
+  todayWeather.appendChild(iconElement);
+
+  const weatherEventsElement = document.createElement('p');
+  const weatherEvents = data.weather.map(event => {
+    const description = event.description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    return description;
+  }).join(', ');
+  weatherEventsElement.textContent = `Skies: ${weatherEvents}`;
+  todayWeather.appendChild(weatherEventsElement);
+  forecastSection.appendChild(todayWeather);
 }
 
-// apiFetch();
+
+apiFetch();
 
 
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=43.69&lon=-116.49&units=imperial&appid=2c352eee7ef0a34c1b7e420592f48122"
@@ -123,14 +132,42 @@ function displayResults2(data) {
     return dt.getHours() === 12;
   });
 
+  const forcastSection = document.getElementById('forecast');
   filteredList.forEach(item => {
     const date = new Date(item.dt * 1000);
-    const dayofWeek = date.toLocaleDateString(undefined, {weekday: 'short'})
+    const dayofWeek = date.toLocaleDateString(undefined, {weekday: 'short'});
+
+    const dayForecast = document.createElement('section');
+    dayForecast.id = dayofWeek.toLowerCase();
+    
+    const day = document.createElement('h3');
+    day.textContent = dayofWeek;
+    day.classList.add('dayOfWeek');
+    dayForecast.appendChild(day);
+
+    const iconsrc = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
+    const icon = document.createElement('img');
+    icon.src = iconsrc;
+    icon.alt = 'Weather Event';
+    icon.classList.add('forecastIcon');
+    dayForecast.appendChild(icon);
+
     const temperature = item.main.temp.toFixed(0);
+    const dayTemp = document.createElement('p');
+    dayTemp.textContent = temperature;
+    dayTemp.classList.add('forcastInfo');
+    dayForecast.appendChild(dayTemp);
+
     const description = item.weather[0].description;
+    const weatherInfo = document.createElement('p');
+    weatherInfo.textContent = description
+    weatherInfo.classList.add('forcastInfo');
+    dayForecast.appendChild(weatherInfo);
 
     console.log(`Date: ${dayofWeek}, Temperature: ${temperature}°F, Description: ${description}`);
+
+    forcastSection.appendChild(dayForecast);
   });
 }
 
-// apiFetchForecast();
+apiFetchForecast();

@@ -133,13 +133,6 @@ button.selectedBtn {
 #weather {
     width: 100%;
 }
-#weatherGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    font-size: 1.3em;
-    text-align: center;
-}
 #forecast {
     grid-column: 1/4;
     display: grid;
