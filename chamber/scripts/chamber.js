@@ -86,30 +86,33 @@ async function apiFetch() {
 function displayResults(data) {
   const forecastSection = document.getElementById('forecast');
   const todayWeather = document.createElement('section');
+  todayWeather.classList.add('dailyWeather');
 
-  const temperatureElement = document.createElement('p');
-  temperatureElement.textContent = `Temperature: ${data.main.temp.toFixed(0)}°F`;
-  todayWeather.appendChild(temperatureElement);
+  const today = document.createElement('h3');
+  today.textContent = `Today`;
+  today.classList.add('dayOfWeek');
+  todayWeather.appendChild(today);
 
   const iconElement = document.createElement('img');
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   iconElement.setAttribute('src', iconsrc);
   iconElement.setAttribute('alt', 'Weather Icon');
+  iconElement.classList.add('forecastIcon');
   todayWeather.appendChild(iconElement);
+  
+  const temperatureElement = document.createElement('p');
+  temperatureElement.textContent = `${data.main.temp.toFixed(0)}°F`;
+  todayWeather.appendChild(temperatureElement);
 
   const weatherEventsElement = document.createElement('p');
   const weatherEvents = data.weather.map(event => {
     const description = event.description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     return description;
   }).join(', ');
-  weatherEventsElement.textContent = `Skies: ${weatherEvents}`;
+  weatherEventsElement.textContent = `Skies: \n${weatherEvents}`;
   todayWeather.appendChild(weatherEventsElement);
   forecastSection.appendChild(todayWeather);
 }
-
-
-apiFetch();
-
 
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=43.69&lon=-116.49&units=imperial&appid=2c352eee7ef0a34c1b7e420592f48122"
 
@@ -139,6 +142,7 @@ function displayResults2(data) {
 
     const dayForecast = document.createElement('section');
     dayForecast.id = dayofWeek.toLowerCase();
+    dayForecast.classList.add('dailyWeather');
     
     const day = document.createElement('h3');
     day.textContent = dayofWeek;
@@ -154,20 +158,23 @@ function displayResults2(data) {
 
     const temperature = item.main.temp.toFixed(0);
     const dayTemp = document.createElement('p');
-    dayTemp.textContent = temperature;
+    dayTemp.textContent = `${temperature}°F`;
     dayTemp.classList.add('forcastInfo');
     dayForecast.appendChild(dayTemp);
 
     const description = item.weather[0].description;
+    const capitalizedDescription = description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
     const weatherInfo = document.createElement('p');
-    weatherInfo.textContent = description
+    weatherInfo.textContent = `Skies: \n${capitalizedDescription}`;
     weatherInfo.classList.add('forcastInfo');
     dayForecast.appendChild(weatherInfo);
+
 
     console.log(`Date: ${dayofWeek}, Temperature: ${temperature}°F, Description: ${description}`);
 
     forcastSection.appendChild(dayForecast);
   });
 }
-
+apiFetch();
 apiFetchForecast();

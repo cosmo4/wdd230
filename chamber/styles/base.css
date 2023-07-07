@@ -121,11 +121,24 @@ button.selectedBtn {
     padding: 10px;
 
 }
+.forecastIcon {
+    background-color: #cdc39280;
+    padding: 3px;
+    border-radius: 5px;
+}
+.dailyWeather {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #f2f0e6, #ffffff);
+    border-radius: 5px;
+}
+.dailyWeather img {
+    width: 50px;
+}
 
 /* id  */
 
 #weather-icon {
-    background-color: #f2f0e699;
+    
     padding: 0;
     border-radius: 5px;
     width: 50px;
@@ -134,9 +147,9 @@ button.selectedBtn {
     width: 100%;
 }
 #forecast {
-    grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 #directoryMain {
