@@ -170,11 +170,22 @@ function displayResults2(data) {
     weatherInfo.classList.add('forcastInfo');
     dayForecast.appendChild(weatherInfo);
 
-
-    console.log(`Date: ${dayofWeek}, Temperature: ${temperature}°F, Description: ${description}`);
-
     forcastSection.appendChild(dayForecast);
   });
 }
 apiFetch();
 apiFetchForecast();
+
+
+const currentDay = currentDate.getDay();
+const daysToShowBanner = [1, 2, 3];
+
+if (daysToShowBanner.includes(currentDay)) {
+  const banner = document.getElementById('banner');
+  banner.style.display = 'block';
+
+  const closeBannerButton = document.getElementById('closeBanner');
+  closeBannerButton.addEventListener('click', () => {
+    banner.style.display = 'none';
+  });
+}
