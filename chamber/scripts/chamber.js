@@ -43,24 +43,6 @@ if (!lastVisitDate) {
 let dateValue =document.querySelector('input[type="hidden"]');
 if (dateValue) {
   dateValue.value = new Date().toISOString();
-} 
-
-
-const membersJSON = 'https://cosmo4.github.io/wdd230/chamber/data/members.json';
-
-async function jsonFetch() {
-  
-  try {
-    const jsonFile = await fetch(membersJSON);
-    if (jsonFile.ok) {
-      const data = await jsonFile.json();
-      
-    } else {
-      throw new Error('Error: Unable to fetch JSON file');
-    }
-  } catch (error) {
-    console.log(error);
-  }
 }
 
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=43.69&lon=-116.49&units=imperial&appid=2c352eee7ef0a34c1b7e420592f48122"
@@ -189,3 +171,85 @@ if (daysToShowBanner.includes(currentDay)) {
     banner.style.display = 'none';
   });
 }
+
+const membersJSON = 'https://cosmo4.github.io/wdd230/chamber/data/member.json';
+
+async function jsonFetch() {
+  
+  try {
+    const jsonFile = await fetch(membersJSON);
+    if (jsonFile.ok) {
+      const data = await jsonFile.json();
+      displayMembers(data);
+    } else {
+      throw new Error('Error: Unable to fetch JSON file');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+jsonFetch();
+
+function displayMembers(data) {
+  const spotlightList = document.getElementById('spotlightMembers');
+
+  // create silver and gold member array
+  const silverGoldMembers = data.filter(member => member.membershipLevel === "Silver" || member.membershipLevel === "Gold");
+
+  // select the 2 random businesses that will be displayed
+  const selectedMembers = selectRandomMembers(silverGoldMembers);
+
+  selectedMembers.forEach(member => {
+    const memberSection = document.createElement('a');
+    memberSection.classList.add('selectedMember');
+    // add company url to the ad
+    memberSection.href = member.url;
+    memberSection.setAttribute('target', '_blank');
+
+    // create company image element
+    const compImg = document.createElement('img');
+    compImg.src = member.image;
+    compImg.alt = member.companyName;
+    memberSection.appendChild(compImg);
+
+    // create company name element
+    const companyName = document.createElement('h3');
+    companyName.textContent = member.companyName;
+    companyName.classList.add('compName');
+    memberSection.appendChild(companyName);
+
+    // create company ad content element
+    const adContent = document.createElement('p');
+    adContent.textContent = member.adContent;
+    adContent.classList.add('adContent');
+    memberSection.appendChild(adContent);
+
+    // add all elements to spotlight list
+    spotlightList.appendChild(memberSection);
+
+
+  })
+  
+}
+
+function selectRandomMembers(silverGoldMembers) {
+  let randomMembers = [];
+  
+  while (randomMembers.length < 2) {
+    const randomIndex = Math.floor(Math.random() * silverGoldMembers.length);
+    const randomMember = silverGoldMembers[randomIndex];
+    
+    // Check if the random member is already selected
+    const isDuplicate = randomMembers.some(member => member.companyName === randomMember.companyName);
+    
+    if (!isDuplicate) {
+      randomMembers.push(randomMember);
+    }
+  }
+  
+  return randomMembers;
+}
+
+
+

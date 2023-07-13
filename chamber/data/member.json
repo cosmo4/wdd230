@@ -5,7 +5,7 @@
         "phoneNumber": "208-555-1234",
         "url": "http://www.johnsonsbakery.com",
         "image": "https://cosmo4.github.io/wdd230/chamber/images/johnson-bake.jpg",
-        "membershipLevel": "Gold",
+        "membershipLevel": "Bronze",
         "ownerNames": "Jimmy Johnson"
     },
     {
@@ -15,7 +15,8 @@
         "url": "http://www.smithshardware.com",
         "image": "https://cosmo4.github.io/wdd230/chamber/images/hardware.webp",
         "membershipLevel": "Silver",
-        "ownerNames": "Jane Smith"
+        "ownerNames": "Jane Smith",
+        "adContent": "Find all your hardware needs at Smith's Hardware! We offer a wide selection of tools, supplies, and expert advice to help you with your DIY projects."
     },
     {
         "companyName": "Aroma Coffee House",
@@ -42,7 +43,8 @@
         "url": "http://www.fitnationgym.com",
         "image": "https://cosmo4.github.io/wdd230/chamber/images/gym.jpg",
         "membershipLevel": "Gold",
-        "ownerNames": "Michael Brown"
+        "ownerNames": "Michael Brown",
+        "adContent": "Get in shape and stay fit at FitNation Gym! Join FitNation Gym today and take the first step towards a healthier lifestyle!"
     },
     {
         "companyName": "StyleStudio Salon",
@@ -51,7 +53,8 @@
         "url": "http://www.stylestudiosalon.com",
         "image": "https://cosmo4.github.io/wdd230/chamber/images/salon.jpg",
         "membershipLevel": "Silver",
-        "ownerNames": "Sophia Davis"
+        "ownerNames": "Sophia Davis",
+        "adContent": "Visit StyleStudio Salon for expert haircuts, styling, and coloring services. Pamper yourself and achieve the look you've always wanted. Book an appointment today!"
     },
     {
         "companyName": "AutoCare Solutions",
@@ -77,7 +80,9 @@
         "phoneNumber": "208-898-2323",
         "url": "http://www.davensuesdiner.com",
         "image": "https://cosmo4.github.io/wdd230/chamber/images/diner-image.jpg",
-        "membershipLevel": "Bronze",
-        "ownerNames": "Dave Thayne, Sue Thayne"
+        "membershipLevel": "Gold",
+        "ownerNames": "Dave Thayne, Sue Thayne",
+        "adContent": "Savor the delicious flavors of home-style cooking at Dave & Sue's Diner. From breakfast to dinner, experience our comforting dishes made with fresh, locally sourced ingredients."
+
     }
 ]
