@@ -19,6 +19,7 @@
         padding: 5px;
         width: 80%;
         border-radius: 4px;
+        transition: transform 0.2s;
     }
     nav a:hover {
         transform: scale(1.2);
@@ -46,7 +47,26 @@
         background-color: #9EB7E5;
         padding: 10px;
     }
-    
+    #spotlightMembers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin: 0 200px;
+    }
+    .selectedMember {
+        margin: 20px 0 40px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+    .selectedMember img {
+        width: 80%;
+        margin: 20px 10%;
+    }
+    .selectedMember:hover {
+        background-color: #9EB7E5;
+        color: white;
+        transform: scale(1.10);
+    }
     #forecast {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -81,7 +101,7 @@
     #discoverMain {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 40px;
         width: 70%;
         margin: 0 auto;
     }
@@ -89,6 +109,7 @@
         text-align: center;
         max-width: 400px;
         margin: 30px auto;
+        transition: transform 0.2s;
     }
     .discoverContent img {
         display: block;
@@ -105,6 +126,7 @@
     }
     .discoverContent:hover {
         color: #304C89;
+        transform: scale(1.1);
     }
     #timing {
         margin: 20px 0;
@@ -196,6 +218,12 @@
     #thankyou p {
         font-size: 2rem;
         padding: 10px;
+    }
+    footer a {
+        color: black;
+    }
+    footer a:hover {
+        background-color: #9EB7E5;
     }
 
     /* directory css */

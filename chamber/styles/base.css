@@ -168,10 +168,34 @@ button.selectedBtn {
   .banner button {
     margin-top: 10px;
   }
+
+  .selectedMember {
+    background-color: #CDC392;
+    color: black;
+    text-decoration: none;
+    margin: 20px 0;
+  }
+  .selectedMember img {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  .adContent {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 10% 20px;
+  }
+  .adCompName {
+    margin: 15px 0;
+  }
   
 
-/* id  */
+/* ids */
 
+#spotlightMembers {
+    display: grid;
+    margin: 30px 0;
+    
+}
 #weather-icon {
     
     padding: 0;

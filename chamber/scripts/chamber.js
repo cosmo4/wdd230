@@ -216,7 +216,7 @@ function displayMembers(data) {
     // create company name element
     const companyName = document.createElement('h3');
     companyName.textContent = member.companyName;
-    companyName.classList.add('compName');
+    companyName.classList.add('adCompName');
     memberSection.appendChild(companyName);
 
     // create company ad content element
