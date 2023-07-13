@@ -30,9 +30,7 @@
     #hero {
         width: 40%;
         padding: 10px;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-bottom: 20px;
+        margin: 0 calc(30% - 10px) 20px;
     }
 
     #month, #spot {
