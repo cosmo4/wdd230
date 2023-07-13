@@ -24,8 +24,9 @@
         "phoneNumber": "208-555-9012",
         "url": "http://www.aromacoffeehouse.com",
         "image": "https://cosmo4.github.io/wdd230/chamber/images/coffee.png",
-        "membershipLevel": "Bronze",
-        "ownerNames": "David Johnson"
+        "membershipLevel": "Silver",
+        "ownerNames": "David Johnson",
+        "adContent": "Indulge in the rich aroma and exceptional flavors of our premium coffee at Aroma Coffee House. Visit us today for a cozy atmosphere, friendly service, and the perfect cup of coffee to start your day."
     },
     {
         "companyName": "Bookworm Books",
@@ -80,7 +81,7 @@
         "phoneNumber": "208-898-2323",
         "url": "http://www.davensuesdiner.com",
         "image": "https://cosmo4.github.io/wdd230/chamber/images/diner-image.jpg",
-        "membershipLevel": "Gold",
+        "membershipLevel": "Bronze",
         "ownerNames": "Dave Thayne, Sue Thayne",
         "adContent": "Savor the delicious flavors of home-style cooking at Dave & Sue's Diner. From breakfast to dinner, experience our comforting dishes made with fresh, locally sourced ingredients."
 
